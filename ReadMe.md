@@ -9,13 +9,6 @@ Pour cela, nous avons commencer par réaliser un travail d'analyse et de prépar
 
 Le projet est structuré comme suit :
 
-- `data/` : Dossier contenant les données utilisées pour le modèle.
-    - `base_modelis_pass_det.csv` : Le dataset principal pour le modèle.
-    - `df_duree.csv` : Le dataset contenant les données préparées pour les modèles de durée. 
-    - `df_logit_xgb` : Le dataset contenant les données préparées pour les modèles logit et XGBoost. 
-    - `dictionnaire.json` : Un fichier JSON contenant la définition des variables.
-    - `Dictionnaire.xlsx` : Un fichier Excel avec le dictionnaire de données.
-
 - `notebook/` : Dossier contenant les Jupyter Notebooks pour l'analyse et la modélisation.
     - `Analyse_exploratoire.ipynb` : Notebook pour l'analyse exploratoire des données.
     - `CoxPHFitter - Explicabilité.ipynb` : Notebook dédié au modèle de Cox Proportional Hazards - Explicabilité.

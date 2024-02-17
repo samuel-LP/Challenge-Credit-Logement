@@ -1,48 +1,46 @@
 # Challenge Crédit Logement - MoSEF
 
+
 ## Description
+The aim of this challenge is to develop a predictive model capable of anticipating cases of Term Default (DET) by relying on a detailed dataset of individuals' payment incidents. To achieve this, we began by conducting data analysis and preparation work. We then developed several models: Logit, XGBoost, as well as 3 different duration models.
 
-L'objectif de ce challenge consiste à développer un modèle prédictif capable d'anticiper les cas de Déchéance du Terme (DET) en se basant sur un ensemble de données détaillées relatives aux incidents de paiement des individus.
-Pour cela, nous avons commencer par réaliser un travail d'analyse et de préparation des données. Nous avons ensuite développer plusieurs modèles : Logit, XGBoost, ainsi que 3 modèles de durées différents. 
+## Project Structure
+The project is structured as follows:
 
-## Structure du Projet
+- `notebook/`: Folder containing the Jupyter Notebooks for analysis and modeling.
+    - `Analyse_exploratoire.ipynb`: Notebook for the exploratory data analysis.
+    - `CoxPHFitter - Explicability.ipynb`: Notebook dedicated to the Cox Proportional Hazards model - Explicability.
+    - `CoxPHFitter - Performance.ipynb`: Notebook for the Cox Proportional Hazards model - Performance.
+    - `CoxTimeVaryingFitter.ipynb`: Notebook for the Cox model with mixed effects.
+    - `Data treatment.ipynb`: Notebook for data preprocessing.
+    - `Logit baseline.ipynb`: Notebook for setting up a logistic regression model.
+    - `XGBoost.ipynb`: Notebook for modeling and evaluating an XGBoost model.
+  
+## To retrieve the project
 
-Le projet est structuré comme suit :
-
-- `notebook/` : Dossier contenant les Jupyter Notebooks pour l'analyse et la modélisation.
-    - `Analyse_exploratoire.ipynb` : Notebook pour l'analyse exploratoire des données.
-    - `CoxPHFitter - Explicabilité.ipynb` : Notebook dédié au modèle de Cox Proportional Hazards - Explicabilité.
-    - `CoxPHFitter - Performance.ipynb` : Notebook au modèle de Cox Proportional Hazards - Performance.
-    - `CoxTimeVaryingFitter.ipynb` : Notebook au modèle de Cox à effets mixtes.
-    - `Data treatment.ipynb` : Notebook pour le prétraitement des données.
-    - `Logit baseline.ipynb` : Notebook pour la mise en place d'un modèle de régression logistique.
-    - `XGBoost.ipynb` : Notebook pour la modélisation et l'évaluation d'un modèle XGBoost.
-
-## Pour récupérer le projet
-
-1. Cloner le repository
+1. Clone the repository
 
     ```bash
     git clone https://github.com/samuel-LP/finance_quant.git
     ```
 
-2. Créer un environnement virtuel
+2. Create a virtual environment
 
-   2.1 Pour Windows : 
+   2.1 for Windows : 
    
    ```bash
     python -m venv venv
     .\venv\Scripts\activate
    ```
    
-   2.2  Pour Mac/Linux : 
+   2.2  for Mac/Linux : 
 
    ```bash
     python3 -m venv venv
     source venv/bin/activate
    ```
 
-3. Installer les dépendances : 
+3. Install dependencies : 
    ```bash
     pip install -r requirements.txt
    ```

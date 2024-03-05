@@ -21,7 +21,8 @@ The project is structured as follows:
 1. Clone the repository
 
     ```bash
-    git clone https://github.com/samuel-LP/finance_quant.git
+    git clone git@github.com:samuel-LP/challenge-credit-logement.git
+    cd challenge-credit-logement
     ```
 
 2. Create a virtual environment
